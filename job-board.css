@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 :root {
-  --page-header-bgColor: #242e42;
+  --page-header-bgColor: #061c36;
   --page-header-bgColor-hover: #1d2636;
   --page-header-txtColor: #dde9f8;
   --page-header-headingColor: #7889a4;
   --page-header-width: 220px;
-  --page-content-bgColor: #f0f1f6;
+  --page-content-bgColor: #d0d0d0;
   --page-content-txtColor: #171616;
   --page-content-blockColor: #fff;
   --white: #fff;
@@ -89,6 +89,9 @@ body {
   background: var(--page-header-bgColor);
 }
 
+body {
+  background: #103f78;
+}
 /*In case you prefer an absolutely positioned header that covers the full page height, add these styles*/
 /*body {
   position: relative;
@@ -305,12 +308,12 @@ body {
   /* height: 700px; */
   grid-template-columns: repeat(4, [col] 100px ) ;
   grid-template-rows: repeat(2, [row] auto  );
-  background-color: #fff;
+  background: var(--page-content-bgColor);
   color: #444;
 }
 
 .box {
-  background-color: #444;
+  background-color: var(--page-header-bgColor);
   color: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -427,9 +430,9 @@ body {
     padding: 10px;
   }
 
-  .page-content .grid {
+  /* .page-content .grid {
     grid-gap: 10px;
-  }
+  } */
 
   .search-and-user {
     position: absolute;
@@ -468,27 +471,27 @@ body {
       .a {
         grid-column: col / span 3;
         grid-row: row ;
-        height: 100px;
+        height: 10rem;
       }
     
     
       .b {
         grid-column: col   / span  3;
         grid-row: row 2;
-        height: 150px;
+        height: 17rem;
       }
     
     
       .c {
         grid-column: col / span 3 ;
         grid-row: row 3 ;
-        height: 200px;
+        height: 26rem;
       }
     
       .d {
         grid-column: col  / span 3  ;
         grid-row: row 4 ;
-        height: 200px;
+        height: 25rem;
       }
     
 
