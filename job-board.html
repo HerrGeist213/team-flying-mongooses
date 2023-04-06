@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="job-board.css">
 </head>
 <body>
+    <!----  NAVIGATION  ---->
+    <nav>
+
+    </nav>
+<!----  END NAVIGATION  ---->
+
+
+<!----  LEFT MENU ICONS  ---->
     <svg style="display:none;">
         <symbol id="logo" viewBox="0 0 140 59">
           <g>
@@ -90,6 +98,10 @@
           <rect x="11.84" y="9.87" width="2" height="5.93" transform="translate(-5.32 12.84) rotate(-45)" />
         </symbol>
       </svg> 
+<!---- END LEFT MENU ICONS  ---->
+
+
+<!----  LEFT MENU   ---->
       <header class="page-header">
         <nav>
           <a href="#0" aria-label="forecastr logo" class="logo">
@@ -199,46 +211,57 @@
           </ul>
         </nav>
       </header>
-      <section class="page-content">
-        <section class="search-and-user">
-          <form>
-            <input type="search" placeholder="Search Pages...">
-            <button type="submit" aria-label="submit form">
-              <svg aria-hidden="true">
-                <use xlink:href="#search"></use>
-              </svg>
-            </button>
-          </form>
-          <div class="admin-profile">
-            <span class="greeting">Hello admin</span>
-            <div class="notifications">
-              <span class="badge">1</span>
-              <svg>
-                <use xlink:href="#users"></use>
-              </svg>
-            </div>
-          </div>
-        </section>
-        <section class="grid">
-            <div class="wrapper">
-                <div class="box a">A</div>
-                <div class="box b">B</div>
-                <div class="box c">C</div>
-                <div class="box d">D</div>
-              </div>
-          <!-- <article></article>
-          <article></article>
-          <article></article>
-          <article></article>
-          <article></article>
-          <article></article>
-          <article></article>
-          <article></article> -->
-        </section>
-        <footer class="page-footer">
-        
-        </footer>
-      </section>
+<!----  END LEFT MENU   ---->
+
+
+<!----  MAIN CONTENT  ---->
+      <section class="main-bkg">
+            <section class="page-content">
+                <section class="search-and-user">
+                <form>
+                    <input type="search" placeholder="Search Pages...">
+                    <button type="submit" aria-label="submit form">
+                    <svg aria-hidden="true">
+                        <use xlink:href="#search"></use>
+                    </svg>
+                    </button>
+                </form>
+                <div class="admin-profile">
+                    <span class="greeting">Hello admin</span>
+                    <div class="notifications">
+                    <span class="badge">1</span>
+                    <svg>
+                        <use xlink:href="#users"></use>
+                    </svg>
+                    </div>
+                </div>
+                </section>
+                <section class="grid">
+                    <h1>Dashboard</h1>
+                    <p>Here is an overview of your job search for the month.</p>
+                    <div class="wrapper">
+                        <div class="box a">A</div>
+                        <div class="box b">B</div>
+                        <div class="box c">C</div>
+                        <div class="box d">D</div>
+                    </div>
+                    <!-- <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article> -->
+                </section>
+                <footer class="page-footer">
+                
+                </footer>
+            </section>
+       </section>
+<!---- END MAIN CONTENT  ---->
+
+<!----  JAVASCRIPT  ---->
       <script src="job-board.js"></script>
 </body>
 </html>
