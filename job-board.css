@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 :root {
-  --page-header-bgColor: #061c36;
+  --page-header-bgColor: #2F3259;
   --page-header-bgColor-hover: #f15b27;
   --page-header-txtColor: #dde9f8;
   --page-header-headingColor: #7889a4;
   --page-header-width: 13.75rem;
-  --page-content-bgColor: #d0d0d0;
+  --page-content-bgColor: #27294A;
   --page-content-txtColor: #171616;
   --page-content-blockColor: #fff;
   --white: #fff;
@@ -122,7 +122,11 @@ body {
 
 .page-header .logo {
   display: block;
-  margin: 0 15px;
+  margin: -2rem 2.5rem -3rem;
+}
+
+.logo {
+  margin-top: rem;
 }
 
 .page-header .logo svg {
@@ -307,8 +311,6 @@ body {
   display: grid;
   grid-gap: 3rem;
   padding: 1.5rem;
-  border-radius: var(--border-radius); /* increase the radius */
-  /* height: 700px; */
   grid-template-columns: repeat(4, [col] 6rem ) ;
   grid-template-rows: repeat(2, [row] auto  );
   background: var(--page-content-bgColor);
@@ -325,10 +327,14 @@ body {
 }
 
 /* Total Jobs Applied & Interviewed */
+.a, .ab, .b,  .c, .d {
+  border-radius: 1.5rem;
+}
 .a {
   grid-column: col / span 3;
   grid-row: row ;
   height: 250px;
+ 
 }
 
 .a {
@@ -390,13 +396,30 @@ body {
 
 /* ---- END of a ---- */
 
-
+/* ---- CELL .ab ---- */
 .ab {
 
 		grid-column: col 4/ span 3;
 		grid-row: row ;
 	
 }
+
+/* ---- TOGGLE FONT LOCATION ----*/
+.toggle-font {
+  display: flex;
+  align-content: flex-end;
+  font-size: 1.3rem;
+  
+}
+
+.skillz {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* ---- CELL .ab ---- */
 
 .b {
   grid-column: col 6  / span 6 ;
@@ -670,7 +693,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .light-mode {
   --page-header-bgColor: #f1efec;
-  --page-header-bgColor-hover: #b9e4e0;
+  --page-header-bgColor-hover: #0284ff;
   --page-header-txtColor: #2c303a;
   --page-header-headingColor: #979595;
   --page-content-bgColor: #fff;
@@ -681,7 +704,7 @@ body {
 .light-mode .page-header .admin-menu a:focus,
 .light-mode .page-header .admin-menu button:hover,
 .light-mode .page-header .admin-menu button:focus {
-  color: var(--black);
+  color: var(--white);
 }
 
 .light-mode .page-header .logo svg,
@@ -689,7 +712,7 @@ body {
 .light-mode .page-header .admin-menu a:focus svg,
 .light-mode .page-header .admin-menu button:hover svg,
 .light-mode .page-header .admin-menu button:focus svg {
-  fill: var(--black);
+  fill: var(--white);
 }
 
 .light-mode .switch [type="checkbox"]:focus + label span:first-child {
