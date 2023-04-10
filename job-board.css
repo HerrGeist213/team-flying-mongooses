@@ -21,6 +21,7 @@
   --switch-sunColor: gold;
   --switch-moonColor: #f4f4f4;
   --switch-bgDarkModeColor: #1f1f27;
+  --fontbold: bold;
 }
 
 * {
@@ -309,11 +310,11 @@ body {
 /* ----- GRID DESKTOP -----*/
 .wrapper {
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   padding: 1.5rem;
   grid-template-columns: repeat(4, [col] 6rem ) ;
   grid-template-rows: repeat(2, [row] auto  );
-  background: var(--page-content-bgColor);
+  background: #2F3259
   color: #444;
 }
 
@@ -387,7 +388,8 @@ body {
   margin-left: 2rem;
 }
 .bignum1, .bignum2 {
-  font-size: 5rem;
+  font-size: 330%;
+  color: #103f78;
 }
 
 .smallword {
@@ -398,46 +400,259 @@ body {
 
 /* ---- CELL .ab ---- */
 .ab {
-
 		grid-column: col 4/ span 3;
 		grid-row: row ;
-	
 }
 
-/* ---- TOGGLE FONT LOCATION ----*/
+
+
+/* ---- TOGGLE FONT LOCATION (for all lower toggles/navs) ----*/
+
+
 .toggle-font {
-  display: flex;
+  display: inline;
   align-content: flex-end;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin-top: 2%;
+  
   
 }
 
+.toggle-font, .toggle-font1 {
+  color: #f15b27;
+}
+
+.toggle-arrow {
+  height: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+/* ---- SKILLS LOCATION ---- */
 .skillz {
   display: flex;
   flex-direction: column;
+  margin-top: 5%;
+}
+
+.skills1 {
+  height: 1.4rem;
+}
+
+.skills-words {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.bottom-skills {
+  /* display: flex;
+  align-items: center; */
+}
+
+.resume-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -4rem;
+}
+
+.resume-button button {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
 }
 
 
+/* ---- CELL .ab  ENDS ---- */
 
-/* ---- CELL .ab ---- */
 
+/* ---- CELL .b  BEGINS ---- */
 .b {
   grid-column: col 6  / span 6 ;
   grid-row: row ;
+
 }
 
+.schedule-int-date {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 0.6rem;
+}
+
+
+.schedule {
+  margin-top: 3%;
+  border: 1px solid #ccc;
+  background-color: #7fb9ffd8;
+  padding: 2%;
+  border-radius: 1rem;
+  margin-bottom: 6%;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatarr {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.event-details {
+  flex-grow: 1;
+}
+
+.event-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--page-content-txtColor);
+}
+
+.event-job-title {
+  font-size: 14px;
+  color: #424141;
+}
+
+.event-time {
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+
+
+.b .resume-button {
+  margin-top: auto;
+}
+/* ---- CELL .b  ENDS ---- */
+
+
+/* ---- CELL .c  BEGINS ---- */
 .c {
   grid-column: col / span 5 ;
   grid-row: row 2 ;
+  grid-row: row 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .c {
   height: 350px;
 }
+
+.box.c h2 {
+  margin-top: 0; /* Reset margin on h2 element */
+  
+}
+
+.job-list, .job-list1 {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.job-list {
+   margin-top: -2rem;
+}
+
+.job-list h4, .job-list1 h4 {
+  font-size: 1.2rem;
+}
+
+.company-name {
+  font-size: 1rem;
+}
+
+.job-item {
+  display: flex;
+  align-items: center; /* Align job items vertically */
+  margin-bottom: 10px; /* Add margin between job items */
+}
+
+.job-image {
+ width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px; /* Add margin between image and job details */
+}
+
+.job-details {
+  flex-grow: 1;
+  margin-top: -1rem;
+}
+
+.job-title {
+  margin-top: 0;
+}
+
+.job-separator {
+  margin-bottom: 0.6rem;
+  background-color: #ccc;
+  margin-top: -1rem;
+}
+
+.job-status, .job-status2, .job-status3 {
+  /* Common styles for all in-review buttons */
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #fff; /* Add a border */
+  border-radius: 10px; /* Add border radius for rounded edges */
+}
+
+.job-status {
+  background-color: #fdecb3; /* Light yellow background */
+  color: #c58701; /* Dark yellow text color */
+
+}
+
+.job-status2 {
+  background-color: #d2f1ca; /* Light green background */
+  color: #12834c; /* Dark green text color */
+}
+
+.job-status3 {
+  background-color: #fbb1b1; /* Light red background */
+  color: #8a0c0c; /* Dark red text color */
+}
+
+.resume-button1 {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.toggle-font1 {
+  font-size: 1.2rem;
+}
+
+.toggle-arrow1 {
+  height: 1.6rem;
+  margin-top: 0.1rem;
+}
+
+
+/* ---- CELL .c  ENDS ---- */
+
+
+/* ---- CELL .d  BEGINS ---- */
 .d {
   grid-column: col 5 / span 7 ;
   grid-row: row 2 ;
 }
+
+
+
+
+/* ---- CELL .d  BEGINS ---- */
+.job-list1 {
+  margin-top: 2.2rem;
+ gap: -1.5rem;
+}
+
 
 
 /* ---- END OF GRID ----*/

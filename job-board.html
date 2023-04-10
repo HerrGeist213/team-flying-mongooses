@@ -221,8 +221,10 @@
                     </div>
                 </div>
                 </section>
+
+                <!------- GRID SECTION ------>
                 <section class="grid">
-                    <h1 style="color: white;">Dashboard</h1>
+                    <h1 style="color: white; font-size: 2rem">Dashboard</h1>
                     <p style="color: white;">Here is an overview of your job search for the month.</p>
                     <div class="wrapper">
                       <!------- CELL a *need to add hover to buttons------>
@@ -255,32 +257,141 @@
 
                          <!------- CELL ab BEGINS------>
                         <div class="box ab">
-                            <p style="text-align: center; font-size: 2rem;">Top Skills</p>
+                            <p style="text-align: center; font-size: 1.8rem; margin-top: -0.5rem;">Top Skills</p>
                             <!-- Add A graph bar -->
                             <div class="skillz">
+                              <svg class="skills1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path fill="#f8981d" d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+                              </svg>
+                              <p class="skills-words">Javascript</p>
                               
-                              <p>Javascript</p>
-                              
-                              <p>Web Design</p>
+                              <svg class="skills1" style="margin-top: 0.5rem; margin-bottom: 0.3rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path fill="#0284ff" d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"/>
+                              </svg>
+                              <p class="skills-words">Web Design</p>
                             </div>
                             <!-- Add the toggle icon-->
+                              <button class="resume-button">
                             <p class="toggle-font">See Resume</p>
+                            <svg class="toggle-arrow"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 36 36" version="1.1">
+                              <path d="M 14.508 7.988 C 14.092 8.661, 14.977 10.411, 16.582 12.086 L 19.383 15.009 16.026 18.473 C 13.088 21.505, 12.889 22.020, 14.428 22.611 C 15.675 23.089, 17.325 22.146, 20.106 19.364 L 24.027 15.443 19.631 11.128 C 16.687 8.239, 14.994 7.201, 14.508 7.988" stroke="none" fill="#f15b27" fill-rule="evenodd"/>
+                            </svg>
+                            </button>
+                            
                         </div>
                          <!------- CELL ab ENDS------>
 
-                        <div class="box b">Scheduled Interviews
-                          <div>
-                            
-                          </div>
-                            <p class="toggle-font">View Schedule</p>
+
+                          <!------- CELL b BEGINS------>
+                        <div class="box b">
+                          <div class="schedule-int">
+                            Scheduled Interviews</div>
+                            <div class="schedule-int-date">
+                              <span class="month">TODAY</span>
+                               April 12, 2023
+                            </div>
+
+                            <div class="schedule">
+                              <div class="event">
+                                <img class="avatarr" src="images/people/hr-woman.jpg" alt="woman portrait">
+                                  <div class="event-details">
+                                    <div class="event-name">Adrina Cash</div>
+                                    <div class="event-job-title">
+                                      HR at Nauture's Cove
+                                    </div>
+                                  </div>
+                                  <div class="event-time">
+                                      9 AM - 11 AM
+                                    </div>
+                              </div>
+                            </div>
+                            <!-- BUTTON -->
+                            <button class="resume-button">
+                              <p class="toggle-font">View Schedule</p>
+                              <svg class="toggle-arrow"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 36 36" version="1.1">
+                                <path d="M 14.508 7.988 C 14.092 8.661, 14.977 10.411, 16.582 12.086 L 19.383 15.009 16.026 18.473 C 13.088 21.505, 12.889 22.020, 14.428 22.611 C 15.675 23.089, 17.325 22.146, 20.106 19.364 L 24.027 15.443 19.631 11.128 C 16.687 8.239, 14.994 7.201, 14.508 7.988" stroke="none" fill="#f15b27" fill-rule="evenodd"/>
+                              </svg>
+                            </button>
                         </div>
+                        <!------- CELL b ENDS------>
+
+                        <!------- CELL c BEGINS------>
                         <div class="box c">Application History
-                            <p class="toggle-font">View All History</p>
+                          <div class="job-list">
+                            <div class="job-item">
+                              <img class="job-image" src="images/copmany logos/hiddenview.png" alt="Hidden view logo">
+                                  <div class="job-details">
+                                    <h4 class="job-title">Web Design</h4>
+                                    <p class="company-name">Hidden View - Full Time (Remote)</p>
+                                  </div>
+                                  <button class="job-status">Pending</button>
+                            </div>
+                            <div class="job-item">
+                              <img class="job-image" src="images/copmany logos/natures.png" alt="Nature's cove logo">
+                                <div class="job-details">
+                                  <h4 class="job-title">Front-End Developer</h4>
+                                  <p class="company-name">Nature's Cove - Full Time (Remote)</p>
+                                </div>
+                                <button class="job-status2">Scheduled Interview</button>
+                            </div>
+                            <hr class="job-separator"> <!--Separator HERE! -->
+                            <div class="job-item">
+                              <img class="job-image" src="images/copmany logos/aandb.png" alt="a&b design logo">
+                                <div class="job-details">
+                                  <h4 class="job-title">UI/UX Designer</h4>
+                                  <p class="company-name">A&B Marketing - Full Time (Remote)</p>
+                                </div>
+                                <button class="job-status3">Declined</button>
+                            </div>
+                              <button class="resume-button1">
+                              <p class="toggle-font1">View All History</p>
+                                <svg class="toggle-arrow1"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 36 36" version="1.1">
+                                  <path d="M 14.508 7.988 C 14.092 8.661, 14.977 10.411, 16.582 12.086 L 19.383 15.009 16.026 18.473 C 13.088 21.505, 12.889 22.020, 14.428 22.611 C 15.675 23.089, 17.325 22.146, 20.106 19.364 L 24.027 15.443 19.631 11.128 C 16.687 8.239, 14.994 7.201, 14.508 7.988" stroke="none" fill="#f15b27" fill-rule="evenodd"/>
+                                </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <!------- CELL c ENDS------>
+
+
+                        <!------- CELL d BEGINS------>
+                        <div class="box d">Saved Jobs
+                            <div class="job-list1">
+                              <div class="job-item">
+                                <img class="job-image" src="images/copmany logos/hiddenview.png" alt="Hidden view logo">
+                                    <div class="job-details">
+                                      <h4 class="job-title">Web Design</h4>
+                                      <p class="company-name">Hidden View - Full Time (Remote)</p>
+                                    </div>
+                              </div>
+                              <hr class="job-separator"> <!--Separator HERE! -->
+                              <div class="job-item">
+                                <img class="job-image" src="images/copmany logos/natures.png" alt="Nature's cove logo">
+                                  <div class="job-details">
+                                    <h4 class="job-title">Front-End Developer</h4>
+                                    <p class="company-name">Nature's Cove - Full Time (Remote)</p>
+                                  </div>
+                              </div>
+
+                              <hr class="job-separator"> <!--Separator HERE! -->
+                              <div class="job-item">
+                                <img class="job-image" src="images/copmany logos/aandb.png" alt="a&b design logo">
+                                  <div class="job-details">
+                                    <h4 class="job-title">UI/UX Designer</h4>
+                                    <p class="company-name">A&B Marketing - Full Time (Remote)</p>
+                                  </div>
+                              </div>
+                              
+                               <button class="resume-button1">
+                              <p class="toggle-font1">View Saved Jobs</p>
+                              <svg class="toggle-arrow1"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 36 36" version="1.1">
+                                <path d="M 14.508 7.988 C 14.092 8.661, 14.977 10.411, 16.582 12.086 L 19.383 15.009 16.026 18.473 C 13.088 21.505, 12.889 22.020, 14.428 22.611 C 15.675 23.089, 17.325 22.146, 20.106 19.364 L 24.027 15.443 19.631 11.128 C 16.687 8.239, 14.994 7.201, 14.508 7.988" stroke="none" fill="#f15b27" fill-rule="evenodd"/>
+                              </svg>
+                            </button>
+                            </div> 
+                            
                         </div>
 
-                        <div class="box d">Saved Jobs
-                            <p class="toggle-font">View Saved Jobs</p>
-                        </div>
                     </div>
                 </section>
                 <footer class="page-footer">
