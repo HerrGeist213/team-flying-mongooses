@@ -93,6 +93,10 @@ body {
 body {
   background: #103f78;
 }
+
+.begin {
+  color: white;
+}
 /*In case you prefer an absolutely positioned header that covers the full page height, add these styles*/
 /*body {
   position: relative;
@@ -251,7 +255,7 @@ body {
   font-size: 1.5rem;
   padding-left: 15px;
   background: var(--page-content-blockColor);
-  color: var(--white);
+  color: var(--black);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
@@ -280,6 +284,10 @@ body {
 
 .search-and-user .admin-profile .greeting {
   margin: 0 10px 0 20px;
+}
+
+.greeting {
+  color: white;
 }
 
 .search-and-user .admin-profile svg {
@@ -314,7 +322,6 @@ body {
   padding: 1.5rem;
   grid-template-columns: repeat(4, [col] 6rem ) ;
   grid-template-rows: repeat(2, [row] auto  );
-  background: #2F3259
   color: #444;
 }
 
@@ -471,6 +478,10 @@ body {
   grid-column: col 6  / span 6 ;
   grid-row: row ;
 
+}
+
+.second-titles {
+  font-weight: 300;
 }
 
 .schedule-int-date {
@@ -907,13 +918,37 @@ body {
 /* LIGHT MODE STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .light-mode {
-  --page-header-bgColor: #f1efec;
+  --page-header-bgColor: #fff;
   --page-header-bgColor-hover: #0284ff;
   --page-header-txtColor: #2c303a;
   --page-header-headingColor: #979595;
-  --page-content-bgColor: #fff;
+  --page-content-bgColor: #f1efec;
   --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.25);
 }
+
+/* .light-mode .page-content {
+  background-color: var(--page-header-bgColor);
+} */
+
+/* .light-mode  .a, .ab, .b,  .c, .d {
+    background-color: var(--white);
+  
+} */
+
+/* --- FONT COLOR --- */
+
+.light-mode p,
+.light-mode .wrapper p,
+.light-mode .second-titles,
+.light-mode .job-title, 
+.light-mode .schedule-int-date, 
+.light-mode .month 
+.light-mode .begin,
+.light-mode h1, .light-mode .greeting {
+  color: var(--black);
+}
+
+
 
 .light-mode .page-header .admin-menu a:hover,
 .light-mode .page-header .admin-menu a:focus,
