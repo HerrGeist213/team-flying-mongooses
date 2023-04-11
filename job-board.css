@@ -338,6 +338,7 @@ body {
 .a, .ab, .b,  .c, .d {
   border-radius: 1.5rem;
 }
+
 .a {
   grid-column: col / span 3;
   grid-row: row ;
@@ -765,9 +766,82 @@ body {
   .search-and-user .admin-profile svg {
     fill: var(--white);
   }
+
+
+
+  /* ---- GRID ---- */
+  .wrapper {
+    grid-gap: 1rem;
+  }
+
+
+  .a {
+		grid-column: col / span 3;
+  grid-row: row ;
+  height: 250px;
+	}
+
+ .bignum2 {
+  font-size: 350%;
+ }
+
+  .smallword {
+    font-size: 1.2rem;
+  }
+
+  .toggle-font, .toggle-font1 {
+    font-size: 1.1rem;
+  }
+
+ .ab {
+		grid-column: col 4/ span 3;
+		grid-row: row ;
+	}
+
+  /* .skills-words {
+    font-size: 1.1rem;
+  } */
+
+  .ab .toggle-font {
+    font-size: 1rem;
+  }
+
+	.b {
+		grid-column: col   / span  4;
+		grid-row: row 2;
+    height: 250px;
+    width: 115%;
+	}
+
+
+	.c {
+		grid-column: col / span 5 ;
+  grid-row: row 3 ;
+  grid-row: row 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  margin-top: -1rem;
+  width: 107%;
+	}
+
+  .job-status2 {
+    padding: 0.3rem;
+  }
+
+	.d {
+		grid-column: col  / span 4  ;
+		grid-row: row 4 ;
+    height: 350px;
+    width: 115%;
+  
+	}
+
+
 }
 
-/* ---- GRID ---- */
+
 
 
 
