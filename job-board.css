@@ -189,7 +189,7 @@ body {
 .page-header .admin-menu svg {
   width: 20px;
   height: 20px;
-  fill: var(--page-header-txtColor);
+  fill: var(--white);
   margin-right: 10px;
 }
 
@@ -251,8 +251,8 @@ body {
 
 .search-and-user [type="search"] {
   width: 100%;
-  height: 50px;
-  font-size: 1.5rem;
+  height: 2.3rem;
+  font-size: 1.2rem;
   padding-left: 15px;
   background: var(--page-content-blockColor);
   color: var(--black);
@@ -261,7 +261,7 @@ body {
 }
 
 .search-and-user ::placeholder {
-  color: var(--page-content-txtColor);
+  color: rgba(0, 0, 0, 0.324);
 }
 
 .search-and-user form svg {
@@ -386,7 +386,7 @@ body {
 }
 
 .camera > svg {
-  height: 4.5rem;
+  height: 4.2rem;
   margin-top: -2rem;
   margin-bottom: -0.7rem;
 }
@@ -421,8 +421,7 @@ body {
   align-content: flex-end;
   font-size: 1.2rem;
   margin-top: 2%;
-  
-  
+
 }
 
 .toggle-font, .toggle-font1 {
@@ -443,6 +442,7 @@ body {
 
 .skills1 {
   height: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .skills-words {
@@ -456,11 +456,15 @@ body {
   align-items: center; */
 }
 
-.resume-button {
+/* .ab .resume-button {
+  margin-bottom: -4rem;
+} */
+
+.resume-button  {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -4rem;
+  /* margin-bottom: -4rem; */
 }
 
 .resume-button button {
@@ -519,13 +523,13 @@ body {
 }
 
 .event-name {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--page-content-txtColor);
 }
 
 .event-job-title {
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #424141;
 }
 
@@ -537,6 +541,7 @@ body {
 
 
 .b .resume-button {
+  overflow: hidden;
   margin-top: auto;
 }
 /* ---- CELL .b  ENDS ---- */
@@ -606,7 +611,8 @@ body {
 .job-separator {
   margin-bottom: 0.6rem;
   background-color: #ccc;
-  margin-top: -1rem;
+  margin-top: -0.9rem;
+  margin-bottom: 0.9rem;
 }
 
 .job-status, .job-status2, .job-status3 {
@@ -657,10 +663,13 @@ body {
   grid-row: row 2 ;
 }
 
+.d .job-separator  {
+  margin-bottom: 0.5rem;
+}
 
 
 
-/* ---- CELL .d  BEGINS ---- */
+/* ---- CELL .d  ENDS ---- */
 .job-list1 {
   margin-top: 1.2rem;
  gap: -1.5rem;
@@ -758,6 +767,13 @@ body {
   }
 }
 
+/* ---- GRID ---- */
+
+
+
+
+
+
 @media screen and (max-width: 400px) /* Mobile */ {
     .wrapper {
         display: grid;
@@ -766,33 +782,118 @@ body {
         grid-template-rows: repeat(4, [row] auto  );
 
       }
+
+      /* --- a CELL --- */
       .a {
         grid-column: col / span 3;
         grid-row: row ;
         height: 10rem;
         width: 22rem;
       }
+
+      .side-by {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .airplane svg {
+        height: 4rem;
+        margin-left: -0.8rem;
+      }
+
+      .camera svg {
+        height: 3.5rem;
     
+      }
+
+      .bignum2 {
+        text-align: center;
+      }
+      .bignum1, .bignum2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+
+      .smallword {
+        font-size: 70%;
+      }
+
+      
+    
+      /* ----CELL ab--- */
     .ab {
       grid-column: col / span 3;
         grid-row: row 2;
         height: 10rem;
         width: 22rem;
     }
+
+    .skillz {
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+
+    .skills1 {
+      margin-right: -3rem;
+    }
+
+    .skills-words {
+      font-size: 1.2rem;
+    }
+
+    /* TOGGLE FONT AREA */
+    .ab .toggle-font {
+      margin-top: 1rem;
+    }
+
+    .ab .toggle-arrow {
+      margin-top: 1.3rem;
+    }
+
+    .toggle-font, .toggle-font1 {
+      font-size: 1.1rem;
+    }
+
+     /* ----CELL b--- */
       .b {
         grid-column: col   / span  3;
         grid-row: row 3;
         height: 17rem;
         width: 22rem;
       }
+
+      .schedule-int-date {
+        margin-top: 1.5rem;
+      }
+
+      .b .toggle-font {
+        margin-top: 1.6rem;
+      }
+      .b .toggle-arrow {
+        margin-top: 1.8rem;
+      }
     
     
+      /* ----CELL b--- */
       .c {
         grid-column: col / span 3 ;
         grid-row: row 4 ;
         height: 26rem;
         width: 22rem;
       }
+
+    .job-item {
+      margin-top: 0.6rem;
+    }
+    
+    .job-separator {
+      margin-top: 0.2rem;
+    }
+
+    .job-status2 {
+      padding: 0.4rem;
+    }
     
       .d {
         grid-column: col  / span 3  ;
@@ -801,6 +902,9 @@ body {
         width: 22rem;
       }
     
+   .d .job-separator {
+    margin-top: -0.2rem;
+   }
 
 }
 
@@ -928,16 +1032,12 @@ body {
   --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.25);
 }
 
-/* .light-mode .page-content {
-  background-color: var(--page-header-bgColor);
-} */
 
-/* .light-mode  .a, .ab, .b,  .c, .d {
-    background-color: var(--white);
-  
-} */
 
 /* --- FONT COLOR --- */
+.light-mode .page-header, .light-mode .admin-menu {
+  background-color: #2F3259;
+}
 
 .light-mode p,
 .light-mode .wrapper p,
@@ -950,6 +1050,10 @@ body {
   color: var(--black);
 }
 
+.light-mode .page-header .admin-menu, 
+.light-mode .page-header .admin-menu a { 
+  color: var(--white);
+}
 
 
 .light-mode .page-header .admin-menu a:hover,
