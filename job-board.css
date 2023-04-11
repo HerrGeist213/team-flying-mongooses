@@ -364,7 +364,7 @@ body {
 .jobs {
   display: flex;
   flex-direction: column;
-  margin-top: -3.3rem;
+  margin-top: -3.6rem;
   
   
 
@@ -388,7 +388,7 @@ body {
 }
 
 .bignum1 {
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 .bignum1, .bignum2 {
   font-size: 330%;
@@ -804,6 +804,10 @@ body {
   
 }
 
+.interviewed {
+  margin-top: -3.6rem;
+}
+
  .bignum2 {
   font-size: 350%;
  }
@@ -915,7 +919,7 @@ body {
       }
 
       .interviewed {
-        margin-top: -3.3rem;
+        margin-top: -3.6rem;
       }
 
       .bignum2 {
