@@ -384,11 +384,11 @@ body {
 .interviewed {
   display: flex;
   flex-direction: column;
-  margin-top: -1.5rem;
+  margin-top: -1.2rem;
 }
 
 .camera > svg {
-  height: 4.2rem;
+  /* height: 4.2rem; */
   margin-top: -2rem;
   margin-bottom: -0.7rem;
 }
@@ -805,6 +805,10 @@ body {
   grid-row: row ;
   height: 250px;
 	}
+
+.jobs {
+  margin-top: -1rem;
+}
 
  .bignum2 {
   font-size: 350%;
