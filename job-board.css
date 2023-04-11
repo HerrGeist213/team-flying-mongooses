@@ -364,26 +364,27 @@ body {
 .jobs {
   display: flex;
   flex-direction: column;
-  margin-top: -4rem;
+  margin-top: -3.3rem;
   
   
 
 }
 
 
-.airplane > svg {
+.airplane > img {
     margin-left: 1rem;
+    height: 4rem;
 }
 
 
 .interviewed {
   display: flex;
   flex-direction: column;
-  margin-top: -3.5rem;
+  margin-top: -3.2rem;
 }
 
-.camera > svg {
- 
+.camera > img {
+ height: 3.5rem;
 }
 
 .bignum1 {
@@ -800,7 +801,7 @@ body {
 	}
 
 .jobs {
-  margin-top: -3.5rem;
+  
 }
 
  .bignum2 {
@@ -895,19 +896,15 @@ body {
         padding-left: 1rem;
         padding-right: 1rem;
       }
-      .airplane svg {
+      .airplane img {
         margin-left: -0.8rem;
       }
 
       
-
-      .bignum2 {
-        text-align: center;
-      
-      }
       .bignum1, .bignum2 {
         font-size: 2rem;
         font-weight: 600;
+
       }
 
       .bignum1 {
@@ -915,6 +912,15 @@ body {
       }
       .smallword {
         font-size: 70%;
+      }
+
+      .interviewed {
+        margin-top: -3.3rem;
+      }
+
+      .bignum2 {
+        text-align: center;
+      
       }
 
       
