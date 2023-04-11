@@ -364,33 +364,26 @@ body {
 .jobs {
   display: flex;
   flex-direction: column;
-  margin-top: -1.5rem;
+  margin-top: -4rem;
   
   
 
 }
+
 
 .airplane > svg {
-    height: 5rem;
-    margin-top: -2rem;
-    margin-bottom: -1rem;
     margin-left: 1rem;
 }
-/* .jobs > svg {
-  height: 5rem;
-  margin-top: -3rem;
-} */
+
 
 .interviewed {
   display: flex;
   flex-direction: column;
-  margin-top: -1.2rem;
+  margin-top: -3.5rem;
 }
 
 .camera > svg {
-  /* height: 4.2rem; */
-  margin-top: -2rem;
-  margin-bottom: -0.7rem;
+ 
 }
 
 .bignum1 {
@@ -807,7 +800,7 @@ body {
 	}
 
 .jobs {
-  margin-top: -1rem;
+  margin-top: -3.5rem;
 }
 
  .bignum2 {
@@ -903,24 +896,23 @@ body {
         padding-right: 1rem;
       }
       .airplane svg {
-        height: 4rem;
         margin-left: -0.8rem;
       }
 
-      .camera svg {
-        height: 3.5rem;
-    
-      }
+      
 
       .bignum2 {
         text-align: center;
+      
       }
       .bignum1, .bignum2 {
         font-size: 2rem;
         font-weight: 600;
-        margin-top: 1rem;
       }
 
+      .bignum1 {
+        margin-top: -0.5rem;
+      }
       .smallword {
         font-size: 70%;
       }
